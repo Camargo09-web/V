@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>El gato con botas</title>
+        <link rel="icon" type="img/x-icon" href="img/favicon.ico">
+        
+        
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            
+            body{
+                font-family: Arial;
+                padding: 10px;
+                background: white;
+            }
+            
+            /*Header/blog title*/
+            .header{
+                padding: 30px;
+                text-align: center;
+                background: #ddd;
+            }
+            
+            .header h1{
+                font-size: 50px;
+            }
+            
+            
+            
+            .section{
+                display: none;
+                padding: 20px;
+                background-color: #ddd;
+                margin-top: 20px;
+                border-radius: 5px;
+            }
+            
+           
+            
+            /*Sección de home*/
+            
+            
+            
+            .producto{
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            
+            .producto:hover{
+                border: 1px solid #ddd;
+            }
+            
+            .producto img{
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            
+            .producto a{
+                display: block;
+                background-color: black;
+                padding: 10px;
+                text-decoration: none;
+                color: white;
+                border-radius: 5px;
+                
+            }
+            
+            .producto a:hover{
+                background-color: #B08D57;
+                color: white;
+            }
+            
+            .descripcion{
+                padding: 15px;
+                text-align: center;
+            }
+
+            .precio{
+                font-size: 1.2em;
+                color: #B08D57; /* Un color dorado para resaltar el precio */
+                text-align: center;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+            
+            .producto-container{
+                display: inline-block;
+                width: 45%;
+                margin: 10px 2%;
+                text-align: center;
+            }
+            
+            @media only screen and(max-width: 700px){
+                .producto-container{
+                    width: 90%;
+                }
+            }
+            
+            @media only screen and(max-width: 500px){
+                .producto-container{
+                    width: 100%;
+                    
+                }
+            }
+            
+            .clearfix:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            /*Add a card effect for articles*/
+            .card{
+                margin 0 auto;
+                width: 100%
+            }
+            
+            .card h2{
+                text-align: center;
+                color: white;
+                background-color: black;
+                padding: 10px 20px;
+                border-radius: 5px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                font-size: 28px;
+                margin-bottom: 20px;
+                
+            }
+        
+            
+            /*Footer*/
+            .footer{
+                padding: 20px;
+                text-align: center;
+                background: white;
+                margin-top: 20px;
+                border: 1px solid #ddd;
+            
+            }
+            
+            /*Responsive layout- when the screen is less that 800px wide, make the two columns stack on top of each other instead of next to each other*/
+            @media screen and(max-width: 800px){
+                .card{
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+            
+           
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        
+    <div class="header">
+        <h1>El gato con botas</h1>
+        <p>Tu estilo, tu voz. No dejes que nadie lo imponga.</p>
+        </div>
+        
+        
+        <div class="card clearfix">
+            <h2>Vestidos</h2>
+            
+            <div class="producto-container">
+                <div class="producto">
+                    <a target="_blank" href="img/Vestido%201.jpg">
+                        <img src="img/Vestido%201.jpg" alt="Vestido 1" width="600" height="400">
+                    </a>
+                    <div class="descripcion">Vestido de manga larga para mujer con cuello en forma de corazón y hombro abullonado</div>
+                    <p class="precio">$266.00</p> 
+                </div>
+            </div>
+
+            <div class="producto-container">
+                <div class="producto">
+                    <a target="_blank" href="img/Vestido%202.jpg">
+                        <img src="img/Vestido%202.jpg" alt="Vestido 2" width="600" height="400">
+                    </a>
+                    <div class="descripcion">Vestido vintage elegante con hombros descubiertos</div>
+                    <p class="precio">$424.00</p> 
+                </div>
+            </div>
+
+            <div class="producto-container">
+                <div class="producto">
+                    <a target="_blank" href="img/Vestido%203.jpg">
+                        <img src="img/Vestido%203.jpg" alt="Vestio 3" width="600" height="400">
+                    </a>
+                    <div class="descripcion">Vestido con volantes y hombros descubiertos</div>
+                    <p class="precio">$301.00</p> 
+                </div>
+            </div>
+
+            <div class="producto-container">
+                <div class="producto">
+                    <a target="_blank" href="img/Vestido%204.jpg">
+                        <img src="img/Vestido%204.jpg" alt="Vestido 4" width="600" height="400">
+                    </a>
+                    <div class="descripcion">Vestido de cóctel elegante con hombros descubiertos, volantes y detalle de lazo </div>
+                    <p class="precio">$335.00</p>
+                </div>
+            </div>
+            
+        </div>
+            
+        
+        <div class="footer">
+            <img src="img/Logo.jpeg" alt="Logo" style="width:100px;">
+            <p>© 2024 El gato con botas. Todos los derechos reservados.</p>
+            
+            <p>Contacto: <a href="mailto:contacto@gmail.com.mx">contacto@gbotas.com.mx</a></p>
+            <p>Teléfono: 2292676085</p>
+        </div>
+        
+            
+        
+    </body>
+    
+</html>
