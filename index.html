@@ -22,13 +22,18 @@
             .header{
                 padding: 30px;
                 text-align: center;
-                background: #ddd;
+                background: white;
+                border: 1px solid #ddd;
             }
             
             .header h1{
-                font-size: 50px;
+                font-size: 40px;
             }
             
+            .header p{
+                color: #B08D57;
+                font-size: 25px;
+            }
             
             
             .section{
@@ -153,6 +158,38 @@
                 }
             }
             
+            /*Botón de regreso*/
+            .boton-container {
+                display: flex; 
+                justify-content: center; 
+                align-items: center;
+                margin-top: 20px; 
+            
+            }
+            
+            button {
+                width: 20%;
+                background-color: #B08D57;
+                border: none;
+                color:white;
+                padding: 12px;
+                border-radius: 5px;
+                font-size: 16px;
+                text-decoration: none;
+                margin-top: 20px;
+                cursor: pointer;
+                
+            }
+            
+            button:hover {
+                background-color: black; 
+            }
+            
+            button:active {
+                background-color: black;
+            }
+            
+            
            
             
         </style>
@@ -162,8 +199,9 @@
     <body>
         
     <div class="header">
-        <h1>El gato con botas</h1>
-        <p>Tu estilo, tu voz. No dejes que nadie lo imponga.</p>
+        <img src="img/Logo.jpeg" alt="Logo" style="width:100px;">
+        <p>Tienda de ropa</p>
+        <h1>EL GATO CON BOTAS</h1>
         </div>
         
         
@@ -209,14 +247,15 @@
                     <p class="precio">$335.00</p>
                 </div>
             </div>
+            <div class="boton-container">
+                <button onclick="history.back()">Regresar</button>
+            </div>
             
         </div>
             
         
         <div class="footer">
-            <img src="img/Logo.jpeg" alt="Logo" style="width:100px;">
             <p>© 2024 El gato con botas. Todos los derechos reservados.</p>
-            
             <p>Contacto: <a href="mailto:contacto@gmail.com.mx">contacto@gbotas.com.mx</a></p>
             <p>Teléfono: 2292676085</p>
         </div>
